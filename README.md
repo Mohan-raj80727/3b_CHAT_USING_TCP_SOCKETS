@@ -11,7 +11,7 @@ To write a python program for creating Chat using TCP Sockets Links.
 4. Send and receive the message using the send function in socket.
 ## PROGRAM:
 # client:
-```
+```py
 import socket 
 s=socket.socket() 
 s.bind(('localhost',9000)) 
@@ -26,7 +26,8 @@ while True:
                 c.send("Not Found".encode())
 ```
 # server:
-```import socket
+```py
+import socket
 s=socket.socket() 
 s.connect(('localhost',9000)) 
 while True: 
